@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # prints bad luck for the fourth loop iteration,
-good luck for the 8th loop iteration, and Best
-School for other iterations
+good luck on the 8th loop iteration, and Best
+School on other iterations
 
 x=1
 
