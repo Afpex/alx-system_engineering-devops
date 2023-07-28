@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kills a process script that stops the previous task's process
+
+kill "$(pgrep -f 'bash ./4-to_infinity_and_beyond')"
