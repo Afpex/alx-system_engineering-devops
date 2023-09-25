@@ -1,4 +1,6 @@
 # ssh config file
-Host *
-      PasswordAuthentication no
-      IdentifyFile ~/.ssh/school
+Host school
+	HostName 54.166.96.129
+	User ubuntu
+	IdentifyFile ~/.ssh/school
+	PasswordAunthetication no
