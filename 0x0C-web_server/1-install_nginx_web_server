@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# bash script to install nginx script
+# index configuration + listen on port 80
+
+sudo apt-get update -y
+sudo apt-get install nginx -y
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.html'
+sudo nginx -s reload
