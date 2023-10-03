@@ -1,8 +1,33 @@
-# custom HTTP header
-sudo sed -i "/server_name _/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-enabled/default
+#!/usr/bin/env bash
+# sets up a new 404 error page
 
-# test for syntax errors
-sudo nginx -t
+sudo apt-get -y update
+sudo apt-get install -y nginx
+echo "Hello World!" > index.html
+sudo mv index.html /var/www/html
 
-# restart the config files
+
+# Creating a 404 Custom error page
+echo "Ceci n'est pas une page" > 404.html
+
+sudo mv 404.html /var/www/html
+echo "server {
+   listen 80 default_server;
+   listen [::]:80 default_server;
+   
+   root /var/www/html;
+   index index.html;
+   location /redirect_me {
+      return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
+   }
+   error_page 404 /404.html;
+   location = /404.html{
+      internal;
+   }
+}" > default
+
+# Testing configurations for syntax errors
+sudo mv -f default /etc/nginx/sites-available/default
+
+# restart nginx after implementing changes
 sudo service nginx restart
