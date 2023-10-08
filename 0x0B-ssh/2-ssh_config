@@ -1,6 +1,6 @@
 # ssh config file
 Host school
-	HostName 54.166.96.129
+	HostName 34.207.190.92
 	User ubuntu
 	IdentifyFile ~/.ssh/school
 	PasswordAunthetication no
