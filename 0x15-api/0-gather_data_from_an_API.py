@@ -10,11 +10,12 @@ if __name__ == '__main__':
     resp = req.get(url).json()
     user_name = resp.get("name")
     count = 0
-    user_todos =req.get(user_todo_url).json()
+    user_todos = req.get(user_todo_url).json()
     total_todos = len(user_todos)
     for todo in user_todos:
         if todo.get("completed"):
             count += 1
 
     print(f"Employee {user_name} is done with tasks({count}/{total_todos})")
-    [print(f"\t {todos.get('title')}") for todos in user_todos if todos.get("completed")]
+    [print(f"\t {todos.get('title')}") for todos in user_todos if todos.get(
+                                                                "completed")]
