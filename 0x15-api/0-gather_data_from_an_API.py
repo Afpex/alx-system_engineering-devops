@@ -3,7 +3,7 @@
 import requests as req
 import sys
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     user_id = int(sys.argv[1])
     url = "https://jsonplaceholder.typicode.com/users/{}".format(user_id)
     user_todo_url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(user_id)
