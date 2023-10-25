@@ -1,18 +1,20 @@
 #!/usr/bin/python3
-"""script using this REST API, for a given employee ID,
-returns information about his/her TODO list progress."""
-import requests as r
+"""Gathering user data using an API"""
+import requests as req
 import sys
 
 if __name__ == '__main__':
-    url = 'https://jsonplaceholder.typicode.com/'
-    usr_id = r.get(url + 'users/{}'.format(sys.argv[1])).json()
-    to_do = r.get(url + 'todos', params={'userId': sys.argv[1]}).json()
-#    print(to_do)
-    completed = [title.get("title") for title in to_do if
-                 title.get('completed') is True]
-    print(completed)
-    print("Employee {} is done with tasks({}/{}):".format(usr_id.get("name"),
-                                                          len(completed),
-                                                          len(to_do)))
-    [print("\t {}".format(title)) for title in completed]
+    user_id = int(sys.argv[1])
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(user_id)
+    user_todo_url = "url/todos".format(user_id)
+    resp = req.get(url).json()
+    user_name = resp.get("name")
+    count = 0
+    user_todos =req.get(user_todo_url).json()
+    total_todos = len(user_todos)
+    for todo in user_todos:
+        if todo.get("completed"):
+            count += 1
+
+    print(f"Employee {user_name} is done with tasks({count}/{total_todos})")
+    [print(f"\t {todos.get('title')}") for todos in user_todos if todos.get("completed")]
