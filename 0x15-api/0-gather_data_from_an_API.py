@@ -6,7 +6,7 @@ import sys
 if __name__ == '__main__':
     user_id = int(sys.argv[1])
     url = "https://jsonplaceholder.typicode.com/users/{}".format(user_id)
-    user_todo_url = "url/todos".format(user_id)
+    user_todo_url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(user_id)
     resp = req.get(url).json()
     user_name = resp.get("name")
     count = 0
