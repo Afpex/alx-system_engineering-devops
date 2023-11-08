@@ -6,7 +6,7 @@ sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo mkdir -p /var/www/html/
 sudo chmod -R 755 /var/www
-echo 'Hello World!' | sudo tee /var/www/html/index.html > /dev/null
+echo 'Lets do this!' > /var/www/html/index.html
 SERVER_CONFIG=\
 "server {
         listen 80 default_server;
@@ -18,7 +18,7 @@ SERVER_CONFIG=\
                 try_files \$uri \$uri/ =404;
         }
         location /redirect_me {
-                return 301 https://www.youtube.com/watch?v=Ywv-9CQ-DfY;
+                return 301 https://www.github.com/Afpex;
         }
 }"
 

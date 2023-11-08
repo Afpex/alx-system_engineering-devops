@@ -6,7 +6,7 @@
 
 # Install and configure HAproxy on my lb-01 server.
 sudo apt-get -y update
-apt-get -y install haproxy
+sudo apt-get -y install haproxy
 
 # edit config file
 server_config=\
@@ -17,8 +17,8 @@ frontend afpex_frontend
         default_backend afpex_backend
 backend afpex_backend
         balance roundrobin
-        server 176572-web-01 100.26.215.65:80 check
-        server 176572-web-02 54.162.43.97:80 check
+        server 247442-web-01 34.207.190.92:80 check
+        server 247442-web-02 54.236.45.84:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
