@@ -14,11 +14,11 @@ By Anthony Ndolo - ALX SE student
 
 ## **Issue Summary**
 
-**Duration**: The outage occurred on November 13, 2023, from 02:00 AM to 06:00 AM (UTC).
+**Duration**: The outage occurred on November 13, 2023, disrupting our Zen-like digital existence from 02:00 AM to 06:00 AM (UTC).
 
-**Impact**: During the incident, the authentication service was down, resulting in users experiencing login failures and a 503 error. Approximately 75% of users were affected.
+**Impact**: Picture this: the authentication service taking a coffee break, leaving users locked out with 503 errors. Approximately 75% of our users felt the FOMO of the century.
 
-**Root Cause**: The root cause of the outage was a misconfiguration in the load balancing system, causing a failure in distributing traffic to the authentication servers.
+**Root Cause**: Our load balancer decided to showcase its interpretive dance skills, executing a flawless misconfiguration waltz, throwing the authentication servers off rhythm.
 
 ## **Timeline**
 
@@ -28,13 +28,13 @@ By Anthony Ndolo - ALX SE student
 * 03:00 AM: Load balancing misconfiguration identified as the root cause; corrective measures initiated.
 * 03:30 AM: Incident escalated to the infrastructure team for further assistance and expertise.
 * 04:00 AM: Load balancing misconfiguration rectified, and traffic distribution normalized.
-* 06:00 AM: Service fully restored; monitoring in place to ensure stability.
+* 06:00 AM: Service fully restored; monitoring in place to ensure stability; load balancer now contemplating a career in the arts.
 
 ## **Root Cause and Resolution**
 
-**Root Cause**: The misconfiguration in the load balancing system resulted in an uneven distribution of traffic to the authentication servers. Specifically, an incorrect weight assignment led to a bottleneck in one of the servers, causing authentication failures.
+**Root Cause**: Our load balancer's secret career in interpretive dance led to a mismatched choreography, causing a traffic bottleneck at the authentication servers. A classic case of a load balancer trying to be too avant-garde.
 
-**Resolution**: The issue was addressed by correcting the load balancing configuration. The weights were adjusted, ensuring a balanced distribution of incoming traffic among the authentication servers. This solution was promptly applied, restoring normal operation.
+**Resolution**: The mischievous load balancer was enrolled in a crash course on proper load balancing choreography. Configuration tweaks were made, ensuring a more harmonious distribution of traffic. The load balancer now moonlights as a dance instructor.
 
 ## **Corrective and Preventative Measures**
 
@@ -47,3 +47,5 @@ Automated Anomaly Detection: Enhance automated monitoring with anomaly detection
 
 **Load Balancer Configuration Audit**: Schedule a regular audit of load balancer configurations to prevent similar misconfigurations.
 **Automated Rollback Procedures**: Implement automated rollback procedures to swiftly revert to a stable configuration in the event of issues post-deployment.
+
+This incident taught us that sometimes, even load balancers need a little rhythm in their lives. We appreciate your patience and promise to keep the dance floor, um, servers, stable in the future!
