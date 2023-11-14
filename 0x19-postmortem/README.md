@@ -10,7 +10,7 @@ By Anthony Ndolo - ALX SE student
 * [Issue Summary](#Issue-summary)
 * [Timeline](#Timeline)
 * [Root Cause and Resolution](#Root-Cause-and-Resolution)
-* [Corrective and Preventive Measures](#Corrective-and-Preventive-Measures)
+* [Corrective and Preventative Measures](#Corrective-and-Preventative-Measures)
 
 ## **Issue Summary**
 
