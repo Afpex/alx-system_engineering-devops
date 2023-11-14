@@ -9,7 +9,7 @@ By Anthony Ndolo - ALX SE student
 
 * [Issue Summary](#Issue-summary)
 
-**Issue Summary**:
+## **Issue Summary**:
 
 **Duration**: The outage occurred on November 13, 2023, from 02:00 AM to 06:00 AM (UTC).
 
