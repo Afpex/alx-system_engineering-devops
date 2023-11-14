@@ -8,6 +8,9 @@ By Anthony Ndolo - ALX SE student
 ***
 
 * [Issue Summary](#Issue-summary)
+* [Timeline](#Timeline)
+* [Root Cause and Resolution](#Root Cause and Resolution)
+* [Corrective and preventive Measures](#Corrective and preventive Measures)
 
 ## **Issue Summary**:
 
@@ -17,7 +20,7 @@ By Anthony Ndolo - ALX SE student
 
 **Root Cause**: The root cause of the outage was a misconfiguration in the load balancing system, causing a failure in distributing traffic to the authentication servers.
 
-**Timeline (UTC)**:
+## **Timeline (UTC)**:
 
 * 02:00 AM: Issue detected through automated monitoring alerts indicating a spike in authentication errors.
 * 02:10 AM: Initial investigation focused on the authentication service logs to identify any anomalies.
@@ -27,13 +30,13 @@ By Anthony Ndolo - ALX SE student
 * 04:00 AM: Load balancing misconfiguration rectified, and traffic distribution normalized.
 * 06:00 AM: Service fully restored; monitoring in place to ensure stability.
 
-**Root Cause and Resolution**:
+## **Root Cause and Resolution**:
 
 **Root Cause**: The misconfiguration in the load balancing system resulted in an uneven distribution of traffic to the authentication servers. Specifically, an incorrect weight assignment led to a bottleneck in one of the servers, causing authentication failures.
 
 **Resolution**: The issue was addressed by correcting the load balancing configuration. The weights were adjusted, ensuring a balanced distribution of incoming traffic among the authentication servers. This solution was promptly applied, restoring normal operation.
 
-**Corrective and Preventative Measures**:
+## **Corrective and Preventative Measures**
 
 **Improvements/Fixes**:
 
